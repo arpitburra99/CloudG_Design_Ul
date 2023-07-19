@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #0d133c;
+  color: #fff;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding-top: 50px;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img h2 {
+  font-size: 25px;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 38%;
+}
+.header li {
+  font-size: 13px;
+  list-style: none;
+  cursor: pointer;
+}
+.header button {
+  padding: 8px 32px;
+  background: none;
+  border: 1px solid #e5c5c5;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.main-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.text-sec h1 {
+  font-size: 70px;
+  line-height: 65px;
+}
+.text-sec p {
+  width: 80%;
+  font-size: 15px;
+}
+.btn-contain {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 18px;
+}
+.btn-contain button:first-child {
+  padding: 9px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #4269ff;
+  background-image: linear-gradient(#4269ff, #a04bf9);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn-contain button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #32417a;
+  cursor: pointer;
+}
+.btn-contain i {
+  margin-top: -4px;
+}
+.img-sec img {
+  height: 640px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: space-around;
+    gap: 30%;
+  }
+  .header ul {
+    display: none;
+  }
+  .text-sec {
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .main-sec {
+    flex-direction: column;
+  }
+  .img-sec img {
+    height: 500px;
+  }
+}
